@@ -1,0 +1,10 @@
+#ifndef DITEL_AND_DITEL_CPP_GRADEBOOK_H
+#define DITEL_AND_DITEL_CPP_GRADEBOOK_H
+
+// Classes
+class GradeBook {
+
+};
+
+
+#endif //DITEL_AND_DITEL_CPP_GRADEBOOK_H
