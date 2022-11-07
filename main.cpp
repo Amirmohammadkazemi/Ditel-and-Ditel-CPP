@@ -1,17 +1,17 @@
 // Libraries
 #include <conio.h>
 #include "GradeBook.h"
+#include "Analysis.h"
 
 // Namespaces
 using namespace std;
 
 // Main function
 int main() {
-    GradeBook gradebook1("Advance programming with c++ and python 01022");
 
-    gradebook1.displayMessage();
+    Analysis application; //application object
 
-    gradebook1.determineClassAverage();
+    application.processExamResults(); //processExamResults method for application object
 
     getch();
     return 0;
