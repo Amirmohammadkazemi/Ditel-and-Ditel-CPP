@@ -77,6 +77,7 @@ void GradeBook::inputGrades() {
 
     cout<<"Enter the letter grades.\nEnter the EOF character to end input\n";
 
+    //get grades and initialize on grade count variables
     while((grade = cin.get()) != EOF) {
         switch (grade) {
             case 'A':

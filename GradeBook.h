@@ -10,15 +10,15 @@ using namespace std;
 // Classes
 class GradeBook {
 public:
-    explicit GradeBook(string name);
-    void setCourseName(string name);
-    string getCourseName();
-    void displayMessage();
-    void determineClassAverage();
-    void inputGrades();
-    void displayGradeReport();
+    explicit GradeBook(string name); //constructor
+    void setCourseName(string name); //set course name
+    string getCourseName(); //display course name
+    void displayMessage(); //display welcome message
+
 private:
-    string courseName;
+    string courseName; //set course name
+
+    //control statements
     int aCount;
     int bCount;
     int cCount;
