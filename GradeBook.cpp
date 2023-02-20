@@ -13,7 +13,15 @@ GradeBook::GradeBook(string name) {
 
 /* set course name */
 void GradeBook::setCourseName(string name) {
-	courseName = name;
+	if(name.length() <= 25) {
+		courseName = name; /* if length > 25 store course name in object */
+	}
+	else {
+		courseName = name.substr(0, 25); /* set course name to firs 25 characters of parameter name */
+		cout << "Name: "<< "\"" << name << "\"" << " exceeds maximum length (25).\n"
+			 << "Limiting course name to first 25 characters.\n"
+			 << endl;
+	}
 }
 
 /* return course name */
