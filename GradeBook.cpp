@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "GradeBook.h"
+#include <iomanip>
 
 /* namespaces */
 using namespace std;
@@ -34,24 +35,35 @@ void GradeBook::displayMessage() {
 	cout << "Welcome to the garde book for " << getCourseName() << endl;
 }
 
-/* determine class avrage based on 10 grades enteredby user */
-void GradeBook::determineClassAvrage() {
+/* determine class average based on 10 grades enteredby user */
+void GradeBook::determineClassAverage() {
 	int total = 0; /* sum of grades */
-	int gradeCounter = 1; /* number of grades */
+	int gradeCounter = 0; /* number of grades */
 	int grade; /* grade value */
-	int avrage; /* avrage of grades */
+	double average; /* average of grades */
 
-	cout << endl; /* add new line befor get and determine avrage */
-	while (gradeCounter <= 10)
+	cout << endl; /* add new line befor get and determine average */
+	cout << "Enter grade " << gradeCounter << " or -1 for quit :> "; /* show message for get grades */
+	cin >> grade; /* get first grade from user */
+
+	while (grade != -1)
 	{
-		cout << "Enter grade "<< gradeCounter << " :> "; /* show message for get grades */
-		cin >> grade; /* get grades from user */
 		total = total + grade; /* add grade to total */
 		gradeCounter += 1; /* increment counter by 1 */
-	}
-	
-	avrage = total/10; /* determine avrage of grades */
 
-	/* display total and average of grades */
-	cout << "\nTotal of all 10 grades is " << total << endl;
+		cout << "Enter grade " << gradeCounter << " or -1 for quit :> "; /* show message for get grades */
+		cin >> grade; /* get grades from user */
+	}
+
+	if(gradeCounter != 0) {
+		/* display total and average (with two digits of precision) */
+		average = static_cast<double>(total) / gradeCounter;
+
+		/* display total and average of grades */
+		cout << "\nTotal of all " << gradeCounter << " grades is " << total << endl;
+
+		cout << "Class average is " << setprecision(2) << fixed << average << endl;
+	}
+	else
+		cout << "No grades were entered" << endl;
 }

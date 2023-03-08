@@ -14,6 +14,5 @@ int main() {
 	cout << "Grade book created for " << GradeBook1.getCourseName() << endl;
 	cout << "Grade book created for " << GradeBook2.getCourseName() << endl;
 
-	GradeBook1.determineClassAvrage();
-
+	GradeBook1.determineClassAverage();
 }

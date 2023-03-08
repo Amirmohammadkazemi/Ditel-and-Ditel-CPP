@@ -14,7 +14,7 @@ class GradeBook {
 		void setCourseName(string); /* set course name */
 		string getCourseName(); /* return course name */
 		void displayMessage(); /* display welcome message to user */
-		void determineClassAvrage(); /* averages grades entered by the user */
+		void determineClassAverage(); /* averages grades entered by the user */
 
 	private:
 		string courseName; /* name of corse in this grade book */
