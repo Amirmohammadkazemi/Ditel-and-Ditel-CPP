@@ -33,3 +33,25 @@ string GradeBook::getCourseName() {
 void GradeBook::displayMessage() {
 	cout << "Welcome to the garde book for " << getCourseName() << endl;
 }
+
+/* determine class avrage based on 10 grades enteredby user */
+void GradeBook::determineClassAvrage() {
+	int total = 0; /* sum of grades */
+	int gradeCounter = 1; /* number of grades */
+	int grade; /* grade value */
+	int avrage; /* avrage of grades */
+
+	cout << endl; /* add new line befor get and determine avrage */
+	while (gradeCounter <= 10)
+	{
+		cout << "Enter grade "<< gradeCounter << " :> "; /* show message for get grades */
+		cin >> grade; /* get grades from user */
+		total = total + grade; /* add grade to total */
+		gradeCounter += 1; /* increment counter by 1 */
+	}
+	
+	avrage = total/10; /* determine avrage of grades */
+
+	/* display total and average of grades */
+	cout << "\nTotal of all 10 grades is " << total << endl;
+}
