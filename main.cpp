@@ -1,6 +1,7 @@
 /** Libraries **/
 #include <iostream>
 #include "GradeBook.h"
+#include "Analysis.h"
 
 /** namespace(s) **/
 using namespace std;
@@ -13,6 +14,9 @@ int main() {
 
 	cout << "Grade book created for " << GradeBook1.getCourseName() << endl;
 	cout << "Grade book created for " << GradeBook2.getCourseName() << endl;
+	
+	Analysis application;				// create Analysis object
+	application.processExamResults(); // call function to process results
 
 	GradeBook1.determineClassAverage();
 }
