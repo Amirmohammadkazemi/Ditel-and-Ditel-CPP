@@ -15,8 +15,10 @@ int main() {
 	cout << "Grade book created for " << GradeBook1.getCourseName() << endl;
 	cout << "Grade book created for " << GradeBook2.getCourseName() << endl;
 	
-	Analysis application;				// create Analysis object
-	application.processExamResults(); // call function to process results
+	GradeBook1.displayMessage();
+	GradeBook1.inputGrades();
+	GradeBook1.displayGradesReport();
 
-	GradeBook1.determineClassAverage();
+	return 0;
+
 }
