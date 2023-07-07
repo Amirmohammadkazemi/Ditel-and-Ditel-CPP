@@ -77,9 +77,9 @@ void GradeBook::determineClassAverage() {
 /* get letter grade and append to a level */
 void GradeBook::inputGrades() {
 	int grade; /* grade entered by user */
-	cout << "\nEnter letter grade. " << endl << "Enter the EOF charachter to end input." << endl;
+	cout << "\nEnter letter grade. " << endl << "Enter the '0' charachter to end input." << endl;
 
-	while ((grade = cin.get()) != EOF) {
+	while ((grade = cin.get()) != '0') {
 		switch(grade) {
 			case 'a':
 			case 'A':
@@ -109,6 +109,7 @@ void GradeBook::inputGrades() {
 			case '\n':
 			case '\t':
 			case ' ':
+			case EOF:
 				break;
 				
 			default:
@@ -125,5 +126,6 @@ void GradeBook::displayGradesReport() {
 		<< "\nB -> " << bCount
 		<< "\nC -> " << cCount
 		<< "\nD -> " << dCount
-		<< "\nF -> " << fCount;
+		<< "\nF -> " << fCount
+		<< endl;
 }
