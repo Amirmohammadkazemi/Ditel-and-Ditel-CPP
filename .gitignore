@@ -25,10 +25,12 @@
 *.la
 *.a
 *.lib
-
+,
 # Executables
 *.exe
 *.out
 *.app
 
 *.swp
+
+.vscode
