@@ -3,6 +3,6 @@
 /* Analysis */
 class Analysis
 {
-    public:
-        void processExamResults();
+public:
+    void processExamResults();
 };
