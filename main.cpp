@@ -16,9 +16,8 @@ int main() {
 	cout << "Grade book created for " << GradeBook2.getCourseName() << endl;
 	
 	GradeBook1.displayMessage();
-	GradeBook1.inputGrades();
-	GradeBook1.displayGradesReport();
+	GradeBook1.getGradesValue();
+	GradeBook1.displayGradesVlaue();
 
 	return 0;
-
 }

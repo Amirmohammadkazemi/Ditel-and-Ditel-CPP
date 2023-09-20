@@ -1,6 +1,7 @@
 /* Libraries */
 #include <iostream>
 #include <string>
+#include <vector>
 
 /* namespaces */
 using namespace std;
@@ -17,6 +18,9 @@ class GradeBook {
 		void determineClassAverage(); /* averages grades entered by the user */
 		void inputGrades();			  /* get arbitrary number of grades from user */
 		void displayGradesReport(); /* display report of grades */
+		int maximum(int, int, int); /* determine max of 3 value */
+		void getGradesValue(); /* get grades value. Not level */
+		void displayGradesVlaue();
 
 	private:
 		string courseName; /* name of corse in this grade book */
@@ -25,4 +29,6 @@ class GradeBook {
 		int cCount; /* Count of grade c */
 		int dCount; /* Count of grade d */
 		int fCount;	/* Count of grade f */
+		int maximumGrade; /* maximum of three grades */
+		vector<double> grades; /* save grades in vector */
 };
