@@ -1,6 +1,9 @@
 /* Libraries */
 #include <iostream>
 #include "Analysis.h" /*include analusis library*/
+#include <algorithm>
+#include "GradeBook.h"
+#include <vector>
 
 /* Name spaces */
 using namespace std;
@@ -31,4 +34,18 @@ void Analysis::processExamResults()
 
     if (passes < 8)
         cout << "Raise tuition" << endl;
+}
+
+/* return maximum of grades */
+double Analysis::maxim(std::vector<double>grades)
+{
+    double max_value = grades[0];
+    for (int i = 1; i < grades.size(); i++)
+    {
+        if (grades[i] > max_value)
+        {
+            max_value = grades[i];
+        }
+    }
+    return max_value;
 }

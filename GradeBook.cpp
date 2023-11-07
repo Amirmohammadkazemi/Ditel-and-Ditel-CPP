@@ -110,6 +110,8 @@ void GradeBook::getGradesValue()
 		// exit if user enter 0
 		if (num_val == 0)
 			break;
+		
+		//TODO: Set limit for grades values
 	}
 	grades.pop_back(); // delete 0 in the last of grades vector
 }

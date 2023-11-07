@@ -19,9 +19,9 @@ public:
 	void determineClassAverage(); /* averages grades entered by the user */
 	void inputGrades();			  /* get arbitrary number of grades from user */
 	void displayGradesReport();	  /* display report of grades */
-	int maximum(int, int, int);	  /* determine max of 3 value */
 	void getGradesValue();		  /* get grades value. Not level */
 	void displayGradesVlaue();
+	vector<double> grades; /* save grades in vector */
 
 private:
 	string courseName;	   /* name of corse in this grade book */
@@ -31,5 +31,4 @@ private:
 	int dCount;			   /* Count of grade d */
 	int fCount;			   /* Count of grade f */
 	int maximumGrade;	   /* maximum of three grades */
-	vector<double> grades; /* save grades in vector */
 };

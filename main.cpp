@@ -17,7 +17,13 @@ int main() {
 	
 	GradeBook1.displayMessage();
 	GradeBook1.getGradesValue();
-	GradeBook1.displayGradesVlaue();
+	//GradeBook1.displayGradesVlaue();
+
+	vector<double> grades = GradeBook1.grades;
+	Analysis gb1Analysis;
+	double maxValue = gb1Analysis.maxim(vector<double>(grades));
+
+	cout << "The maximum value is " << maxValue << endl;
 
 	return 0;
 }
