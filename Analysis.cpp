@@ -49,3 +49,17 @@ double Analysis::maxim(std::vector<double>grades)
     }
     return max_value;
 }
+
+/* return minimum of grades */
+double Analysis::minim(std::vector<double>grades)
+{
+    double min_value = grades[0];
+    for (int i=0; i<grades.size(); i++)
+    {
+        if (grades[i] < min_value)
+        {
+            min_value = grades[i];
+        }
+    }
+    return min_value;
+}

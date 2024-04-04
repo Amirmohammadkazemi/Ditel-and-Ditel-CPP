@@ -22,8 +22,10 @@ int main() {
 	vector<double> grades = GradeBook1.grades;
 	Analysis gb1Analysis;
 	double maxValue = gb1Analysis.maxim(vector<double>(grades));
+	double minValue = gb1Analysis.minim(vector<double>(grades));
 
-	cout << "The maximum value is " << maxValue << endl;
+	cout << "The max grade is " << maxValue << endl;
+	cout << "The min grade is " << minValue << endl;
 
 	return 0;
 }
