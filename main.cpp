@@ -1,5 +1,6 @@
 /** Libraries **/
 #include <iostream>
+#include <ostream>
 #include "GradeBook.h"
 #include "Analysis.h"
 
@@ -23,9 +24,11 @@ int main() {
 	Analysis gb1Analysis;
 	double maxValue = gb1Analysis.maxim(vector<double>(grades));
 	double minValue = gb1Analysis.minim(vector<double>(grades));
+    double avrageValue = gb1Analysis.avrage(grades);
 
 	cout << "The max grade is " << maxValue << endl;
 	cout << "The min grade is " << minValue << endl;
+    cout << "The avrage of grades is " << avrageValue << endl;
 
 	return 0;
 }

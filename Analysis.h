@@ -13,4 +13,5 @@ public:
     void processExamResults();
     double maxim(vector<double>);
     double minim(vector<double>);
+    double avrage(vector<double>);
 };

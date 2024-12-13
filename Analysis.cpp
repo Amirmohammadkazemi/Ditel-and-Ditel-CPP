@@ -61,5 +61,17 @@ double Analysis::minim(std::vector<double>grades)
             min_value = grades[i];
         }
     }
+
     return min_value;
+}
+
+/* Avrage with just max and min */
+double Analysis::avrage(vector<double>grades)
+{
+    double avrage = 0;
+    for (int i=0; i<grades.size(); i++)
+    {
+        avrage = avrage + grades[i];
+    }
+    return avrage/grades.size();
 }
