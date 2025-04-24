@@ -12,13 +12,13 @@ using namespace std;
 /* constractor initializer course name with string suplied as argument */
 GradeBook::GradeBook(string name)
 {
-	setCourseName(name); /* call set function to initialize course name */
-	/* initialize count of grades levels */
-	aCount = 0;
-	bCount = 0;
-	cCount = 0;
-	dCount = 0;
-	fCount = 0;
+    setCourseName(name); /* call set function to initialize course name */
+    /* initialize count of grades levels */
+    aCount = 0;
+    bCount = 0;
+    cCount = 0;
+    dCount = 0;
+    fCount = 0;
 }
 
 /* set course name */
